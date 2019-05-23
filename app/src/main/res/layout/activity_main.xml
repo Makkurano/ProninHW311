@@ -26,15 +26,15 @@
 </LinearLayout>
 <LinearLayout
             android:id="@+id/firstLine"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1">
+            android:weightSum="4">
 
                 <Button
                     android:id="@+id/btn_1"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="1"
@@ -42,7 +42,7 @@
 
                 <Button
                     android:id="@+id/btn_2"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="2"
@@ -50,7 +50,7 @@
 
                 <Button
                     android:id="@+id/btn_3"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="3"
@@ -58,7 +58,7 @@
 
                 <Button
                     android:id="@+id/btn_plus"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="+"
@@ -68,15 +68,15 @@
 
         <LinearLayout
             android:id="@+id/secondLine"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1">
+            android:weightSum="4">
 
                 <Button
                     android:id="@+id/btn_4"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="4"
@@ -84,7 +84,7 @@
 
                 <Button
                     android:id="@+id/btn_5"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="5"
@@ -92,7 +92,7 @@
 
                 <Button
                     android:id="@+id/btn_6"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="6"
@@ -100,7 +100,7 @@
 
                 <Button
                     android:id="@+id/btn_minus"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="-"
@@ -109,15 +109,15 @@
 
         <LinearLayout
             android:id="@+id/thirdLine"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1">
+            android:weightSum="4">
 
                 <Button
                     android:id="@+id/btn_7"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="7"
@@ -125,7 +125,7 @@
 
                 <Button
                     android:id="@+id/btn_8"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="8"
@@ -133,7 +133,7 @@
 
                 <Button
                     android:id="@+id/btn_9"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="9"
@@ -141,7 +141,7 @@
 
                 <Button
                     android:id="@+id/btn_multiplication"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:textSize="20dp"
                     android:text="*"
@@ -150,23 +150,23 @@
 
         <LinearLayout
             android:id="@+id/fourthLine"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1">
+            android:weightSum="4">
 
             <Button
                 android:id="@+id/btn_0"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:textSize="20dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="0" />
 
             <Button
                 android:id="@+id/btn_equals"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:textSize="20dp"
                 android:layout_weight="1"
@@ -174,7 +174,7 @@
 
             <Button
                 android:id="@+id/btn_division"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:textSize="20dp"
                 android:layout_weight="1"
