@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private TextView inputdata;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        inputdata = findViewById(R.id.inputedText);
 
         Button button0 = findViewById(R.id.btn_0);
         Button button1 = findViewById(R.id.btn_1);
@@ -26,8 +29,23 @@ public class MainActivity extends AppCompatActivity {
         Button buttonminus = findViewById(R.id.btn_minus);
         Button buttonplus = findViewById(R.id.btn_plus);
         Button buttonmult = findViewById(R.id.btn_multiplication);
-        Button buttondev = findViewById(R.id.btn_division);
+        Button buttondiv = findViewById(R.id.btn_division);
         Button buttoneq = findViewById(R.id.btn_equals);
+        button0.setOnClickListener(mClickListener);
+        button1.setOnClickListener(mClickListener);
+        button2.setOnClickListener(mClickListener);
+        button3.setOnClickListener(mClickListener);
+        button4.setOnClickListener(mClickListener);
+        button5.setOnClickListener(mClickListener);
+        button6.setOnClickListener(mClickListener);
+        button7.setOnClickListener(mClickListener);
+        button8.setOnClickListener(mClickListener);
+        button9.setOnClickListener(mClickListener);
+        buttonminus.setOnClickListener(mClickListener);
+        buttonplus.setOnClickListener(mClickListener);
+        buttonmult.setOnClickListener(mClickListener);
+        buttondiv.setOnClickListener(mClickListener);
+        buttoneq.setOnClickListener(mClickListener);
     }
 
     private View.OnClickListener mClickListener = new View.OnClickListener() {
