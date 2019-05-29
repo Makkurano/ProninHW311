@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView inputdata;
+    private double datasum = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,24 +54,34 @@ public class MainActivity extends AppCompatActivity {
 
             switch (v.getId()) {
                 case R.id.btn_0:
+                    inputdata.setText("0");
                     break;
                 case R.id.btn_1:
+                    inputdata.setText("1");
                     break;
                 case R.id.btn_2:
+                    inputdata.setText("2");
                     break;
                 case R.id.btn_3:
+                    inputdata.setText("3");
                     break;
                 case R.id.btn_4:
+                    inputdata.setText("4");
                     break;
                 case R.id.btn_5:
+                    inputdata.setText("5");
                     break;
                 case R.id.btn_6:
+                    inputdata.setText("6");
                     break;
                 case R.id.btn_7:
+                    inputdata.setText("7");
                     break;
                 case R.id.btn_8:
+                    inputdata.setText("8");
                     break;
                 case R.id.btn_9:
+                    inputdata.setText("9");
                     break;
                 case R.id.btn_minus:
                     break;
