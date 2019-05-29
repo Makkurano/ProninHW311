@@ -10,17 +10,17 @@
     tools:context=".MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal">
     <EditText
         android:id="@+id/inputedText"
+        android:inputType="numberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="100dp"
+        android:textSize="65dp"
         android:text="0"
         android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:textStyle="bold"/>
 
 
 </LinearLayout>
@@ -36,7 +36,7 @@
                     android:id="@+id/btn_1"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="1"
                     android:layout_weight="1"/>
 
@@ -44,7 +44,7 @@
                     android:id="@+id/btn_2"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="2"
                     android:layout_weight="1"/>
 
@@ -52,7 +52,7 @@
                     android:id="@+id/btn_3"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="3"
                     android:layout_weight="1"/>
 
@@ -60,7 +60,7 @@
                     android:id="@+id/btn_plus"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="+"
                     android:layout_weight="1" />
 
@@ -78,7 +78,7 @@
                     android:id="@+id/btn_4"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="4"
                     android:layout_weight="1"/>
 
@@ -86,7 +86,7 @@
                     android:id="@+id/btn_5"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="5"
                     android:layout_weight="1"/>
 
@@ -94,7 +94,7 @@
                     android:id="@+id/btn_6"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="6"
                     android:layout_weight="1"/>
 
@@ -102,7 +102,7 @@
                     android:id="@+id/btn_minus"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="-"
                     android:layout_weight="1"/>
         </LinearLayout>
@@ -119,7 +119,7 @@
                     android:id="@+id/btn_7"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="7"
                     android:layout_weight="1"/>
 
@@ -127,7 +127,7 @@
                     android:id="@+id/btn_8"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="8"
                     android:layout_weight="1"/>
 
@@ -135,7 +135,7 @@
                     android:id="@+id/btn_9"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="9"
                     android:layout_weight="1"/>
 
@@ -143,7 +143,7 @@
                     android:id="@+id/btn_multiplication"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:text="*"
                     android:layout_weight="1"/>
         </LinearLayout>
@@ -160,7 +160,7 @@
                 android:id="@+id/btn_0"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_weight="2"
                 android:text="0" />
 
@@ -168,7 +168,7 @@
                 android:id="@+id/btn_equals"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_weight="1"
                 android:text="=" />
 
@@ -176,9 +176,9 @@
                 android:id="@+id/btn_division"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_weight="1"
-                android:text="\" />
+                android:text="÷" />
         </LinearLayout>
     <TextView
         android:id="@+id/titleText"
@@ -187,5 +187,5 @@
         android:gravity="center_horizontal"
         android:textColor="@color/colorPrimaryDark"
         android:text="КАЛЬКУЛЯТОР"
-        android:textSize="50dp"/>
+        android:textSize="15dp"/>
 </LinearLayout>
