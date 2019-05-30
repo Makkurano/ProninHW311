@@ -182,13 +182,11 @@
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1">
-            <TextView
-                android:id="@+id/titleText"
+            <Button
+                android:id="@+id/btn_cln"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:textColor="@color/colorPrimaryDark"
-                android:text="КАЛЬКУЛЯТОР"
-                android:textSize="20dp"/>
-    </LinearLayout>
+                android:layout_height="wrap_content"
+                android:text="@string/Очистить"
+                android:textSize="20dp" />
+        </LinearLayout>
 </LinearLayout>

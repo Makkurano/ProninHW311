@@ -9,14 +9,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView inputdata;
-    private double datasum = 0;
+    private String result = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         inputdata = findViewById(R.id.inputedText);
-
+        Button buttoncln = findViewById(R.id.btn_cln);
         Button button0 = findViewById(R.id.btn_0);
         Button button1 = findViewById(R.id.btn_1);
         Button button2 = findViewById(R.id.btn_2);
@@ -47,55 +47,70 @@ public class MainActivity extends AppCompatActivity {
         buttonmult.setOnClickListener(mClickListener);
         buttondiv.setOnClickListener(mClickListener);
         buttoneq.setOnClickListener(mClickListener);
+        buttoncln.setOnClickListener(mClickListener);
     }
 
     private View.OnClickListener mClickListener = new View.OnClickListener() {
         public void onClick(View v) {
 
-            switch (v.getId()) {
-                case R.id.btn_0:
-                    inputdata.setText("0");
-                    break;
-                case R.id.btn_1:
-                    inputdata.setText("1");
-                    break;
-                case R.id.btn_2:
-                    inputdata.setText("2");
-                    break;
-                case R.id.btn_3:
-                    inputdata.setText("3");
-                    break;
-                case R.id.btn_4:
-                    inputdata.setText("4");
-                    break;
-                case R.id.btn_5:
-                    inputdata.setText("5");
-                    break;
-                case R.id.btn_6:
-                    inputdata.setText("6");
-                    break;
-                case R.id.btn_7:
-                    inputdata.setText("7");
-                    break;
-                case R.id.btn_8:
-                    inputdata.setText("8");
-                    break;
-                case R.id.btn_9:
-                    inputdata.setText("9");
-                    break;
-                case R.id.btn_minus:
-                    break;
-                case R.id.btn_plus:
-                    break;
-                case R.id.btn_multiplication:
-                    break;
-                case R.id.btn_division:
-                    break;
-                case R.id.btn_equals:
-                    break;
-                default:
-                    break;
+                switch (v.getId()) {
+                    case R.id.btn_0:
+                        result = result+"0";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_1:
+                        result = result+"1";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_2:
+                        result = result+"2";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_3:
+                        result = result+"3";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_4:
+                        result = result+"4";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_5:
+                        result = result+"5";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_6:
+                        result = result+"6";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_7:
+                        result = result+"7";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_8:
+                        result = result+"8";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_9:
+                        result = result+"9";
+                        inputdata.setText(result);
+                        break;
+                    case R.id.btn_minus:
+                        break;
+                    case R.id.btn_plus:
+                        break;
+                    case R.id.btn_multiplication:
+                        break;
+                    case R.id.btn_division:
+                        break;
+                    case R.id.btn_equals:
+                        break;
+                    case R.id.btn_cln:
+                        result = "";
+                        inputdata.setText("0");
+                        break;
+                    default:
+                        break;
+                }
             }
-        }
     };
 }
