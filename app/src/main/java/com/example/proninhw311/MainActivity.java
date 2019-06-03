@@ -10,6 +10,12 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView inputdata;
     private String result = "";
+    private double plus = 0;
+    private double minus = 0;
+    private double mult = 0;
+    private double div = 0;
+    private double memo = 0;
+    private double action = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,14 +101,42 @@ public class MainActivity extends AppCompatActivity {
                         inputdata.setText(result);
                         break;
                     case R.id.btn_minus:
+                        minus = Double.parseDouble(result);
+                        result = "";
+                        inputdata.setText("0");
                         break;
                     case R.id.btn_plus:
+                        plus = Double.parseDouble(result);
+                        result = "";
+                        inputdata.setText("0");
                         break;
                     case R.id.btn_multiplication:
+                        mult = Double.parseDouble(result);
+                        result = "";
+                        inputdata.setText("0");
                         break;
                     case R.id.btn_division:
+                        div = Double.parseDouble(result);
+                        result = "";
+                        inputdata.setText("0");
                         break;
                     case R.id.btn_equals:
+                        memo = Double.parseDouble(result);
+                        if (minus > 0) {
+                            action = minus - memo;
+                        } else if (plus > 0) {
+                            action = plus + memo;
+                        } else if (mult > 0) {
+                            action = mult * memo;
+                        } else if (div > 0) {
+                            action = div / memo;
+                        }
+                        inputdata.setText(Double.toString(action));
+                        result = "";
+                        plus = 0;
+                        minus = 0;
+                        mult = 0;
+                        div = 0;
                         break;
                     case R.id.btn_cln:
                         result = "";

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainblock"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="6"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -18,7 +17,7 @@
                 android:id="@+id/inputedText"
                 android:inputType="numberDecimal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:textSize="80dp"
                 android:text="0"
                 android:textColor="@color/colorPrimary"
@@ -69,7 +68,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:weightSum="4">
-
                 <Button
                     android:id="@+id/btn_4"
                     android:layout_width="0dp"
@@ -77,7 +75,6 @@
                     android:textSize="25dp"
                     android:text="4"
                     android:layout_weight="1"/>
-
                 <Button
                     android:id="@+id/btn_5"
                     android:layout_width="0dp"
@@ -85,7 +82,6 @@
                     android:textSize="25dp"
                     android:text="5"
                     android:layout_weight="1"/>
-
                 <Button
                     android:id="@+id/btn_6"
                     android:layout_width="0dp"
@@ -93,7 +89,6 @@
                     android:textSize="25dp"
                     android:text="6"
                     android:layout_weight="1"/>
-
                 <Button
                     android:id="@+id/btn_minus"
                     android:layout_width="0dp"
@@ -110,7 +105,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:weightSum="4">
-
                 <Button
                     android:id="@+id/btn_7"
                     android:layout_width="0dp"
@@ -118,7 +112,6 @@
                     android:textSize="25dp"
                     android:text="7"
                     android:layout_weight="1"/>
-
                 <Button
                     android:id="@+id/btn_8"
                     android:layout_width="0dp"
@@ -126,7 +119,6 @@
                     android:textSize="25dp"
                     android:text="8"
                     android:layout_weight="1"/>
-
                 <Button
                     android:id="@+id/btn_9"
                     android:layout_width="0dp"
@@ -134,7 +126,6 @@
                     android:textSize="25dp"
                     android:text="9"
                     android:layout_weight="1"/>
-
                 <Button
                     android:id="@+id/btn_multiplication"
                     android:layout_width="0dp"
@@ -151,7 +142,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:weightSum="4">
-
             <Button
                 android:id="@+id/btn_0"
                 android:layout_width="0dp"
@@ -159,7 +149,6 @@
                 android:textSize="25dp"
                 android:layout_weight="2"
                 android:text="0" />
-
             <Button
                 android:id="@+id/btn_equals"
                 android:layout_width="0dp"
@@ -167,7 +156,6 @@
                 android:textSize="25dp"
                 android:layout_weight="1"
                 android:text="=" />
-
             <Button
                 android:id="@+id/btn_division"
                 android:layout_width="0dp"
